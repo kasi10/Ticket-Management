@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking - Ticket Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4">Train Booking</h2>
+        <form id="train-booking-form">
+            <div class="form-group">
+                <label for="train-pickup">Pickup Location</label>
+                <input type="text" id="train-pickup" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="train-destination">Destination</label>
+                <input type="text" id="train-destination" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="train-date">Date</label>
+                <input type="date" id="train-date" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="train-time">Time</label>
+                <input type="time" id="train-time" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Book Train Ticket</button>
+        </form>
+
+        <!-- Display booked ticket here -->
+        <div id="booked-ticket" class="mt-4"></div>
+    </div>
+    <script src="js/train.js"></script>
+</body>
+</html>
