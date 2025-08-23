@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking - Ticket Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .ticket-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-4">Movie Booking</h2>
+        <form id="movie-booking-form">
+            <div class="form-group">
+                <label for="movie-title">Movie Title</label>
+                <select id="movie-title" class="form-control" required>
+                    <option value="">Select a Movie</option>
+                    <option value="Movie 1">Anantham</option>
+                    <option value="Movie 2">Rangan</option>
+                    <option value="Movie 3">Drishyam</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="movie-date">Date</label>
+                <input type="date" id="movie-date" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="movie-time">Showtime</label>
+                <input type="time" id="movie-time" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="movie-tickets">Number of Tickets</label>
+                <input type="number" id="movie-tickets" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Book Movie Tickets</button>
+        </form>
+        <div id="ticket-info" class="ticket-info"></div>
+    </div>
+    <script src="js/movie.js"></script>
+</body>
+</html>
